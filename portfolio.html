@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Maddie Bold's Portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Maddie" name="author"><!-- custom bootstrap css -->
+  <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"><!-- jquery for bootstrap -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+  </script><!-- bootstrap javascript -->
+
+  <script src="bootstrap/dist/js/bootstrap.min.js">
+  </script><!-- my custom css -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <!-- open main page content container -->
+    <section class="main-container">
+      <!-- open header -->
+      <header class="row header-container">
+        <div class="col-6 logo"><img alt="my initials in a dark blue uppercase font" id="logo" src="images/logo.jpg"></div>
+        <div class="col-6 main-title">
+          <h1>Maddie Bold</h1>
+          <h4>Full Stack Developer</h4>
+        </div><!-- open bootstrap nav -->
+        <nav class="row navbar navbar-default">
+          <div class="navbar-header"></div>
+          <div class="navbar-header">
+            <button class="navbar-toggle" data-target="#collapse-navbar" data-toggle="collapse" type="button"><span class="sr-only"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+          </div>
+          <div class="collapse navbar-collapse" id="collapse-navbar">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a class="nav-item" href="#featured">My Featured Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item" href="#contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </nav><!-- end nav -->
+      </header><!-- end header -->
+      <div class="row cello"><img alt=" close up image of a cello" class="cello-img" sizes="(max-width: 550px) 100vw, (max-width: 768px) 100vw" src="images/cellolg.jpg" srcset="images/cellosm.jpg 700w, images/cellolg.jpg 1400w"></div>
+      <h2 class="row portfolio-title" id="featured">Featured Work</h2>
+      <section class="row portfolio">
+        <div class="col-6 project">
+          <a href="http://www.github.com" target="_blank"><img alt="image of code on a computer screen" class="project-img" sizes="(max-width: 550px) 100vw, (max-width: 768px) 100vw" src="images/codelg.jpg" srcset="images/codesm.jpg 700w, images/codelg.jpg 1400w"></a>
+          <h3>Project One</h3>
+          <p>Full Stack Developer Nanodegree</p><a href="http://www.github.com" target="_blank">www.github.com</a>
+        </div>
+        <div class="col-6 project">
+          <a href="http://www.github.com" target="_blank"><img alt="close up image of a cello" class="project-img" sizes="(max-width: 550px) 100vw, (max-width: 768px) 100vw" src="images/cello1lg.jpg" srcset="images/cello1sm.jpg 700w, images/cello1lg.jpg 1400w"></a>
+          <h3>Project Two</h3>
+          <p>Full Stack Developer Nanodegree</p><a href="http://www.github.com" target="_blank">www.github.com</a>
+        </div>
+        <div class="col-6 project">
+          <a href="http://www.github.com" target="_blank"><img alt="vivid colors cast on a black background" class="project-img" sizes="(max-width: 550px) 100vw, (max-width: 768px) 100vw" src="images/vividlg.png" srcset="images/vividsm.png 700w, images/vividlg.png 1400w"></a>
+          <h3>Project Three</h3>
+          <p>Full Stack Developer Nanodegree</p><a href="http://www.github.com" target="_blank">www.github.com</a>
+        </div>
+      </section><!-- open footer -->
+      <footer class="row col-12" id="contact">
+        <ul>
+          <li>
+            <a href="https://github.com/MaddieBee" target="_blank"><i>My GitHub Site</i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/MaddieMikhae" target="_blank"><i>Twitter</i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/madison-bold-010283113/" target="_blank"><i>Linked In Profile</i></a>
+          </li>
+        </ul>
+      </footer><!-- close footer -->
+    </section><!-- close main container -->
+  </main>
+  <script>
+           $('a[href*=\\#]').on('click', function(event){
+           event.preventDefault();
+           $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+   });
+  </script>
+</body>
+</html>
